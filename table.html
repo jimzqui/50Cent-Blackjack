@@ -1,0 +1,582 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/typography.css" type="text/css" />
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="infobar">
+				<div id="top-buttons">
+				<a id="button-returnlobby" class="button30px">
+					<span>
+						<img src="images/button-icon/return-med.png" alt="">
+						<dfn>Lobby</dfn>
+					</span>
+				</a>
+				<a id="button-playnow" class="button30px twolines">
+					<span>
+						<img src="images/button-icon/playnow-med.png" alt="">
+						<dfn>Play<br/> Now</dfn>
+					</span>
+				</a>
+				</div>
+				<div id="tableinfo">
+					<a id="button-getcredits" class="button24px twolines">
+						<span>
+							<dfn>Get chips<br/> and tokens</dfn>
+						</span>
+					</a>
+					<div id="tablechips">
+						<span class="credit chips" id="money_value">$5,000,000</span>
+					</div>
+					<div id="tabletokens">
+						<span class="credit tokens" id="currency_tokens_value">600</span>
+					</div>
+					<div id="xpbar_detail">
+						<label>Level: <var>30</var></label>
+						<div class="levelbar">
+							<span style="width:40%"></span>
+						</div>
+					</div>
+				</div>
+				<div id="system-buttons">
+					<a class="system-button" id="button-tips">Tips</a>
+					<a class="system-button" id="button-chat">Chat</a>
+					<a class="system-button" id="button-volume">Volume</a>
+				</div>
+			</div>
+		</div>
+		<!--
+		<div id="friendbar">
+			<a class="friendscroll-prev"></a>
+			<a class="friendscroll-first"></a>
+			<div class="friendscroll">
+				<div class="friendscroll-wrap">
+					<div class="friend invite">
+						<a id="button-invite" class="button42px"><span>Invite</span></a>
+					</div>
+					<div class="friend">
+						<span class="friendcount">1</span>
+						<span class="friendname">Trixie</span>
+						<span class="friendpic">
+							<img src="" alt="" />
+						</span>
+						<span class="friendlevel">Level <var>18</var></span>
+						<span class="friendscore"><var>18,955,055</var></span>
+						<a class="button42px button-viewfriend"><span>View</span></a>
+					</div>
+					<div class="friend">
+						<span class="friendcount">1</span>
+						<span class="friendname">Trixie</span>
+						<span class="friendpic">
+							<img src="" alt="" />
+						</span>
+						<span class="friendlevel">Level <var>18</var></span>
+						<span class="friendscore"><var>18,955,055</var></span>
+						<a class="button42px button-viewfriend"><span>View</span></a>
+					</div>
+					<div class="friend">
+						<span class="friendcount">1</span>
+						<span class="friendname">Trixie</span>
+						<span class="friendpic">
+							<img src="" alt="" />
+						</span>
+						<span class="friendlevel">Level <var>18</var></span>
+						<span class="friendscore"><var>18,955,055</var></span>
+						<a class="button42px button-viewfriend"><span>View</span></a>
+					</div>
+					<div class="friend">
+						<span class="friendcount">1</span>
+						<span class="friendname">Trixie</span>
+						<span class="friendpic">
+							<img src="" alt="" />
+						</span>
+						<span class="friendlevel">Level <var>18</var></span>
+						<span class="friendscore"><var>18,955,055</var></span>
+						<a class="button42px button-viewfriend"><span>View</span></a>
+					</div>
+					<div class="friend">
+						<span class="friendcount">1</span>
+						<span class="friendname">Trixie</span>
+						<span class="friendpic">
+							<img src="" alt="" />
+						</span>
+						<span class="friendlevel">Level <var>18</var></span>
+						<span class="friendscore"><var>18,955,055</var></span>
+						<a class="button42px button-viewfriend"><span>View</span></a>
+					</div>
+					<div class="friend">
+						<span class="friendcount">1</span>
+						<span class="friendname">Trixie</span>
+						<span class="friendpic">
+							<img src="" alt="" />
+						</span>
+						<span class="friendlevel">Level <var>18</var></span>
+						<span class="friendscore"><var>18,955,055</var></span>
+						<a class="button42px button-viewfriend"><span>View</span></a>
+					</div>
+				</div>
+			</div>
+			<a class="friendscroll-next"></a>
+			<a class="friendscroll-last"></a>
+			<span class="pointer"></span>
+		</div>
+		-->
+		<div id="wallpaper">
+			<div id="highlights">
+				<div id="highlight-1" class="highlight spot1"></div>
+			</div>
+			<div id="turns">
+				<div id="playerturn-1" class="playerturn spot1"></div>
+				<div id="playerturn-1" class="playerturn spot2"></div>
+				<div id="playerturn-1" class="playerturn spot3"></div>
+				<div id="playerturn-1" class="playerturn spot4"></div>
+				<div id="playerturn-1" class="playerturn spot5"></div>
+			</div>
+			<div id="payouts"></div>
+			<div id="players">
+				<div id="player-19" class="seat1 player">
+					<div class="theavatar female">
+						<div class="avatar_default"></div>
+						<div class="body_skintone"><img alt="" src="images/female/bodies/body-m_table.png" class="avataritem-166"></div>
+						<div class="body_eyecolor"><img alt="" src="images/eyes/eyecolor_black_avatar.gif" class="avataritem-227"></div>
+						<div class="body_facetype"><img alt="" src="images/female/faces/facetype_female3_m_avatar.png" class="avataritem-169"></div>
+						<div class="body_hairstyle"><img alt="" src="images/male/hair/hairstyle_crewcut_red_avatar.png" class="avataritem-171"></div>
+						<div class="body_arms"><img alt="" src="images/female/bodies/arms-m.png" class="avataritem-166"></div>
+						<div class="body_hand"><img alt="" src="images/female/bodies/hand-m_still.gif" class="avataritem-166"></div>
+						<div class="fashion_bottom"><img alt="" src="images/female/bottoms/bottom_denimcutoffs_avatar.png" class="avataritem-331"></div>
+						<div class="fashion_top"><img alt="" src="images/female/tops/top_brownquiltedjacket_avatar.png" class="avataritem-224"><img alt="" src="images/female/tops/top_brownquiltedjacket_sleeve.png" class="avataritem-224"></div>
+						<div class="fashion_feet"><img alt="" src="images/female/feet/feet_tanplatformsandals_avatar.png" class="avataritem-170"></div>
+						<div class="fashion_accessory"><img alt="" src="_avatar.png" class="avataritem-340"></div><div class="fashion_head"><img alt="" src="images/male/head/head_blackrimwayfarersunglasses_avatar.png" class="avataritem-95"></div>
+						<div class="fashion_sleeves"></div>
+					</div>
+					<div class="playertab current">
+						<span class="playername">Jimbo</span>
+						<div class="playerbuttons">
+							<a class="playerbutton"><img alt="" src="images/icon/playerinfo.png"></a>
+							<a class="playerbutton"><img alt="" src="images/icon/playerdrink.png"></a>
+							<a class="playerbutton"><img alt="" src="images/icon/playerfbcredit.png"></a>
+						</div>
+					</div>
+					<div class="playerdrink">
+						<img alt="" src="images/testings/drinks/drink1.png">
+					</div>
+				</div>
+				<div id="player-19" class="seat2 player">
+					<div class="theavatar female">
+						<div class="avatar_default"></div>
+						<div class="body_skintone"><img alt="" src="images/female/bodies/body-m_table.png" class="avataritem-166"></div>
+						<div class="body_eyecolor"><img alt="" src="images/eyes/eyecolor_black_avatar.gif" class="avataritem-227"></div>
+						<div class="body_facetype"><img alt="" src="images/female/faces/facetype_female3_m_avatar.png" class="avataritem-169"></div>
+						<div class="body_hairstyle"><img alt="" src="images/male/hair/hairstyle_crewcut_red_avatar.png" class="avataritem-171"></div>
+						<div class="body_arms"><img alt="" src="images/female/bodies/arms-m.png" class="avataritem-166"></div>
+						<div class="body_hand"><img alt="" src="images/female/bodies/hand-m_still.gif" class="avataritem-166"></div>
+						<div class="fashion_bottom"><img alt="" src="images/female/bottoms/bottom_denimcutoffs_avatar.png" class="avataritem-331"></div>
+						<div class="fashion_top"><img alt="" src="images/female/tops/top_brownquiltedjacket_avatar.png" class="avataritem-224"><img alt="" src="images/female/tops/top_brownquiltedjacket_sleeve.png" class="avataritem-224"></div>
+						<div class="fashion_feet"><img alt="" src="images/female/feet/feet_tanplatformsandals_avatar.png" class="avataritem-170"></div>
+						<div class="fashion_accessory"><img alt="" src="_avatar.png" class="avataritem-340"></div><div class="fashion_head"><img alt="" src="images/male/head/head_blackrimwayfarersunglasses_avatar.png" class="avataritem-95"></div>
+						<div class="fashion_sleeves"></div>
+					</div>
+					<div class="playertab">
+						<span class="playername">Jimbo</span>
+						<div class="playerbuttons">
+							<a class="playerbutton"><img alt="" src="images/icon/playerinfo.png"></a>
+							<a class="playerbutton"><img alt="" src="images/icon/playerdrink.png"></a>
+							<a class="playerbutton"><img alt="" src="images/icon/playerfbcredit.png"></a>
+						</div>
+					</div>
+					<div class="playerdrink">
+						<img alt="" src="images/testings/drinks/drink1.png">
+					</div>
+				</div>
+				<div id="player-19" class="seat3 player">
+					<div class="theavatar female">
+						<div class="avatar_default"></div>
+						<div class="body_skintone"><img alt="" src="images/female/bodies/body-m_table.png" class="avataritem-166"></div>
+						<div class="body_eyecolor"><img alt="" src="images/eyes/eyecolor_black_avatar.gif" class="avataritem-227"></div>
+						<div class="body_facetype"><img alt="" src="images/female/faces/facetype_female3_m_avatar.png" class="avataritem-169"></div>
+						<div class="body_hairstyle"><img alt="" src="images/male/hair/hairstyle_crewcut_red_avatar.png" class="avataritem-171"></div>
+						<div class="body_arms"><img alt="" src="images/female/bodies/arms-m.png" class="avataritem-166"></div>
+						<div class="body_hand"><img alt="" src="images/female/bodies/hand-m_still.gif" class="avataritem-166"></div>
+						<div class="fashion_bottom"><img alt="" src="images/female/bottoms/bottom_denimcutoffs_avatar.png" class="avataritem-331"></div>
+						<div class="fashion_top"><img alt="" src="images/female/tops/top_brownquiltedjacket_avatar.png" class="avataritem-224"><img alt="" src="images/female/tops/top_brownquiltedjacket_sleeve.png" class="avataritem-224"></div>
+						<div class="fashion_feet"><img alt="" src="images/female/feet/feet_tanplatformsandals_avatar.png" class="avataritem-170"></div>
+						<div class="fashion_accessory"><img alt="" src="_avatar.png" class="avataritem-340"></div><div class="fashion_head"><img alt="" src="images/male/head/head_blackrimwayfarersunglasses_avatar.png" class="avataritem-95"></div>
+						<div class="fashion_sleeves"></div>
+					</div>
+					<div class="playertab">
+						<span class="playername">Jimbo</span>
+						<div class="playerbuttons">
+							<a class="playerbutton"><img alt="" src="images/icon/playerinfo.png"></a>
+							<a class="playerbutton"><img alt="" src="images/icon/playerdrink.png"></a>
+							<a class="playerbutton"><img alt="" src="images/icon/playerfbcredit.png"></a>
+						</div>
+					</div>
+					<div class="playerdrink">
+						<img alt="" src="images/testings/drinks/drink1.png">
+					</div>
+				</div>
+				<div id="player-19" class="seat4 player">
+					<div class="theavatar female">
+						<div class="avatar_default"></div>
+						<div class="body_skintone"><img alt="" src="images/female/bodies/body-m_table.png" class="avataritem-166"></div>
+						<div class="body_eyecolor"><img alt="" src="images/eyes/eyecolor_black_avatar.gif" class="avataritem-227"></div>
+						<div class="body_facetype"><img alt="" src="images/female/faces/facetype_female3_m_avatar.png" class="avataritem-169"></div>
+						<div class="body_hairstyle"><img alt="" src="images/male/hair/hairstyle_crewcut_red_avatar.png" class="avataritem-171"></div>
+						<div class="body_arms"><img alt="" src="images/female/bodies/arms-m.png" class="avataritem-166"></div>
+						<div class="body_hand"><img alt="" src="images/female/bodies/hand-m_still.gif" class="avataritem-166"></div>
+						<div class="fashion_bottom"><img alt="" src="images/female/bottoms/bottom_denimcutoffs_avatar.png" class="avataritem-331"></div>
+						<div class="fashion_top"><img alt="" src="images/female/tops/top_brownquiltedjacket_avatar.png" class="avataritem-224"><img alt="" src="images/female/tops/top_brownquiltedjacket_sleeve.png" class="avataritem-224"></div>
+						<div class="fashion_feet"><img alt="" src="images/female/feet/feet_tanplatformsandals_avatar.png" class="avataritem-170"></div>
+						<div class="fashion_accessory"><img alt="" src="_avatar.png" class="avataritem-340"></div><div class="fashion_head"><img alt="" src="images/male/head/head_blackrimwayfarersunglasses_avatar.png" class="avataritem-95"></div>
+						<div class="fashion_sleeves"></div>
+					</div>
+					<div class="playertab">
+						<span class="playername">Jimbo</span>
+						<div class="playerbuttons">
+							<a class="playerbutton"><img alt="" src="images/icon/playerinfo.png"></a>
+							<a class="playerbutton"><img alt="" src="images/icon/playerdrink.png"></a>
+							<a class="playerbutton"><img alt="" src="images/icon/playerfbcredit.png"></a>
+						</div>
+					</div>
+					<div class="playerdrink">
+						<img alt="" src="images/testings/drinks/drink1.png">
+					</div>
+				</div>
+				<div id="player-19" class="seat5 player">
+					<div class="theavatar female">
+						<div class="avatar_default"></div>
+						<div class="body_skintone"><img alt="" src="images/female/bodies/body-m_table.png" class="avataritem-166"></div>
+						<div class="body_eyecolor"><img alt="" src="images/eyes/eyecolor_black_avatar.gif" class="avataritem-227"></div>
+						<div class="body_facetype"><img alt="" src="images/female/faces/facetype_female3_m_avatar.png" class="avataritem-169"></div>
+						<div class="body_hairstyle"><img alt="" src="images/male/hair/hairstyle_crewcut_red_avatar.png" class="avataritem-171"></div>
+						<div class="body_arms"><img alt="" src="images/female/bodies/arms-m.png" class="avataritem-166"></div>
+						<div class="body_hand"><img alt="" src="images/female/bodies/hand-m_still.gif" class="avataritem-166"></div>
+						<div class="fashion_bottom"><img alt="" src="images/female/bottoms/bottom_denimcutoffs_avatar.png" class="avataritem-331"></div>
+						<div class="fashion_top"><img alt="" src="images/female/tops/top_brownquiltedjacket_avatar.png" class="avataritem-224"><img alt="" src="images/female/tops/top_brownquiltedjacket_sleeve.png" class="avataritem-224"></div>
+						<div class="fashion_feet"><img alt="" src="images/female/feet/feet_tanplatformsandals_avatar.png" class="avataritem-170"></div>
+						<div class="fashion_accessory"><img alt="" src="_avatar.png" class="avataritem-340"></div><div class="fashion_head"><img alt="" src="images/male/head/head_blackrimwayfarersunglasses_avatar.png" class="avataritem-95"></div>
+						<div class="fashion_sleeves"></div>
+					</div>
+					<div class="playertab">
+						<span class="playername">Jimbo</span>
+						<div class="playerbuttons">
+							<a class="playerbutton"><img alt="" src="images/icon/playerinfo.png"></a>
+							<a class="playerbutton"><img alt="" src="images/icon/playerdrink.png"></a>
+							<a class="playerbutton"><img alt="" src="images/icon/playerfbcredit.png"></a>
+						</div>
+					</div>
+					<div class="playerdrink">
+						<img alt="" src="images/testings/drinks/drink1.png">
+					</div>
+				</div>
+			</div>
+			<div id="timer">
+				<div class="inner">
+					<span class="panellabel">Turn Timer</span>
+					<div class="timerbar">
+						<span class="bar" style="width:60%"></span>
+					</div>
+					<span class="time"><var class="timervar">02:24</var></span>
+				</div>
+			</div>
+			<div id="table">
+				<div id="players-bet">
+					<div class="seat1 player-bet">
+						<div class="bet chips02">
+							<var>$50</var>
+						</div>
+					</div>
+					<div class="seat2 player-bet">
+						<div class="bet chips03">
+							<var>$80</var>
+						</div>
+					</div>
+					<div class="seat3 player-bet">
+						<span class="playerturn"></span>
+						<div class="bet chips04">
+							<var>$225</var>
+						</div>
+					</div>
+					<div class="seat4 player-bet doublebet">
+						<div class="bet chips01">
+							<var>$15</var>
+						</div>
+						<div class="bet chips01">
+							<var>$15</var>
+						</div>
+					</div>
+					<div class="seat5 player-bet">
+						<div class="bet chips02">
+							<var>$50</var>
+						</div>
+					</div>
+				</div>
+				<div id="players-hand">
+					<div class="seat1 player-hand hassplit">
+						<div class="hand main-hand">
+							<div class="cards">
+								<img src="images/cards/ah.png" alt=""/>
+								<img src="images/cards/2s.png" alt=""/>
+							</div>
+							<span class="cardcount">21</span>
+						</div>
+						<div class="hand split-hand">
+							<div class="cards">
+								<img src="images/cards/ah.png" alt=""/>
+								<img src="images/cards/2s.png" alt=""/>
+								<img src="images/cards/5c.png" alt=""/>
+								<img src="images/cards/6s.png" alt=""/>
+								<img src="images/cards/3d.png" alt=""/>
+								<img src="images/cards/4c.png" alt=""/>
+							</div>
+							<span class="cardcount">21</span>
+						</div>
+					</div>
+					<div class="seat2 player-hand">
+						<div class="hand main-hand">
+							<div class="cards">
+								<img src="images/cards/ah.png" alt=""/>
+								<img src="images/cards/2s.png" alt=""/>
+								<img src="images/cards/5c.png" alt=""/>
+								<img src="images/cards/6s.png" alt=""/>
+								<img src="images/cards/3d.png" alt=""/>
+								<img src="images/cards/4c.png" alt=""/>
+							</div>
+							<span class="cardcount">21</span>
+						</div>
+					</div>
+					<div class="seat3 player-hand">
+						<div class="hand main-hand">
+							<div class="cards">
+								<img src="images/cards/ah.png" alt=""/>
+								<img src="images/cards/2s.png" alt=""/>
+								<img src="images/cards/5c.png" alt=""/>
+								<img src="images/cards/6s.png" alt=""/>
+								<img src="images/cards/3d.png" alt=""/>
+								<img src="images/cards/4c.png" alt=""/>
+							</div>
+							<span class="cardcount">21</span>
+						</div>
+					</div>
+					<div class="seat4 player-hand">
+						<div class="hand main-hand">
+							<div class="cards">
+								<img src="images/cards/ah.png" alt=""/>
+								<img src="images/cards/2s.png" alt=""/>
+								<img src="images/cards/5c.png" alt=""/>
+								<img src="images/cards/6s.png" alt=""/>
+								<img src="images/cards/3d.png" alt=""/>
+								<img src="images/cards/4c.png" alt=""/>
+							</div>
+							<span class="cardcount">21</span>
+						</div>
+					</div>
+					<div class="seat5 player-hand">
+						<div class="hand main-hand">
+							<div class="cards">
+								<img src="images/cards/ah.png" alt=""/>
+								<img src="images/cards/2s.png" alt=""/>
+								<img src="images/cards/5c.png" alt=""/>
+								<img src="images/cards/6s.png" alt=""/>
+								<img src="images/cards/3d.png" alt=""/>
+								<img src="images/cards/4c.png" alt=""/>
+							</div>
+							<span class="cardcount">21</span>
+						</div>
+					</div>
+				</div>
+				<div id="mainpanel">
+					<div id="nowplaying">
+						<div class="inner">
+							<span class="panellabel">Now Playing:</span>
+							<span class="playerpic"><img src="images/android/testings/currentplayer.png" alt="" /></span>
+							<dfn>Tim's Turn</dfn>
+						</div>
+					</div>
+					<div id="theplayer">
+						<div class="main-cards">
+							<span class="yourbet"><var>$1,000,000</var></span>
+							<div class="your-hand">
+								<div class="cards">
+									<img alt="" src="images/cards/2s.png">
+									<img alt="" src="images/cards/5c.png">
+									<img alt="" src="images/cards/6h.png">
+									<img alt="" src="images/cards/3d.png">
+									<img alt="" src="images/cards/4c.png">
+									<img alt="" src="images/cards/ah.png">
+								</div>
+								<span class="cardcount">21</span>
+								<dfn>Your Hand</dfn>
+							</div>
+						</div>
+						<div class="split-cards">
+							<span class="yourbet"><var>$1,000,000</var></span>
+							<div class="your-hand">
+								<div class="cards">
+									<img alt="" src="images/cards/2s.png">
+									<img alt="" src="images/cards/5c.png">
+									<img alt="" src="images/cards/6h.png">
+									<img alt="" src="images/cards/3d.png">
+									<img alt="" src="images/cards/4c.png">
+									<img alt="" src="images/cards/ah.png">
+								</div>
+								<span class="cardcount">21</span>
+							</div>
+						</div>
+					</div>
+					<div id="dealer">
+						<div class="dealers-hand">
+							<div class="cards">
+								<img alt="" src="images/cards/2s.png">
+								<img alt="" src="images/cards/5c.png">
+								<img alt="" src="images/cards/6h.png">
+								<img alt="" src="images/cards/3d.png">
+								<img alt="" src="images/cards/4c.png">
+								<img alt="" src="images/cards/ah.png">
+							</div>
+							<span class="cardcount">21</span>
+							<dfn>Dealer's Hand</dfn>
+						</div>
+					</div>
+					<div id="tableheat">
+						<div class="inner">
+							<span class="panellabel">Table Heat</span>
+							<div class="tableheatbar">
+								<span class="bar" style="width:90%"></span>
+								<span class="heat"></span>
+							</div>
+						</div>
+					</div>
+					<div id="mainactions">
+						<div class="inner">
+							<div id="actions">
+								<div class="inner">
+									<span class="panellabel">Moves</span>
+									<a class="button52px" id="button-hit"><span><dfn>Hit</dfn></span></a>
+									<a class="button52px"><span><dfn>Stand</dfn></span></a>
+									<a class="button52px twolines" id="button-doubledown"><span><dfn>Double<br/> Down</dfn></span></a>
+									<a class="button52px"><span><dfn>Split</dfn></span></a>
+									<a class="button52px" id="button-surrender"><span><dfn>Surrender</dfn></span></a>
+								</div>
+							</div>
+							<div id="boosts">
+								<div class="inner">
+									<span class="panellabel">Boosts</span>
+									<div class="boost">
+										<dfn><img src="images/boosts/boost1.png" alt=""/></dfn>
+										<span class="boostcount"><var>0</var></span>
+									</div>
+									<div class="boost">
+										<dfn><img src="images/boosts/boost2.png" alt=""/></dfn>
+										<span class="boostcount"><var>0</var></span>
+									</div>
+									<div class="boost">
+										<dfn><img src="images/boosts/boost3.png" alt=""/></dfn>
+										<span class="boostcount"><var>0</var></span>
+									</div>
+									<div class="boost">
+										<dfn><img src="images/boosts/boost4.png" alt=""/></dfn>
+										<span class="boostcount"><var>88</var></span>
+									</div>
+									<div class="boost">
+										<dfn><img src="images/boosts/boost5.png" alt=""/></dfn>
+										<span class="boostcount"><var>100</var></span>
+									</div>
+									<div class="boost">
+										<dfn><img src="images/boosts/boost6.png" alt=""/></dfn>
+										<span class="boostcount"><var>0</var></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+		<div class="specialmodal">
+			<div class="specialmodal-title">
+				<div class="specialmodal-return">
+					<a class="button34px twolines"><span><img src="images/android/button-icon/return-sm.png" alt=""> <dfn>Return<br>  to Menu</dfn></span></a>
+				</div>
+				<span class="specialmodal-icon"><img src="images/android/icon/headicon_drink.png" /></span>
+				<h3>GIFTING: <span>Drinks</span></h3>
+				<small>Close</small>
+				<a class="specialmodal-close">Close</a>
+			</div>
+			<div class="specialmodal-body">
+				<div id="gifting">
+					<div class="gifting-sidebar">
+						<h6>Categories</h6>
+						<div class="categoryitems twoitems">
+							<a class="categoryitems-up"></a>
+							<div class="categoryitems-wrap">
+								<div class="categoryitem" id="category-drink">
+									<img src="images/android/bg-giftdrink.png" alt="" />
+								</div>
+								<div class="categoryitem">
+									<img src="images/android/bg-giftboost.png" alt="" />
+								</div>
+							</div>
+							<a class="categoryitems-down"></a>
+						</div>
+					</div>
+					<div class="giftitems">
+						<div class="giftitems-center">
+							<a class="giftitems-left"></a>
+							<div class="giftitems-scroll">
+								<div class="giftitems-wrap">
+									<div class="giftitem">
+										<img src="images/items/default-medium-boost.png" alt="" />
+									</div>
+									<div class="giftitem">
+										<img src="images/items/default-medium-boost.png" alt="" />
+									</div>
+									<div class="giftitem">
+										<img src="images/items/default-medium-boost.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<a class="giftitems-right"></a>
+						</div>
+						<div class="giftitem-info">
+							<h3>Item Name</h3>
+							<dfn class="giftitem-count">2 of 12</dfn>
+							<dfn class="giftitem-owned">OWNED: 0</dfn>
+						</div>
+						<div class="giftitem-price gifting-friend">
+							<div class="price">
+								<img src="images/android/icon/5chip_big.png" alt="" />
+								<var>5</var>
+							</div>
+							<a class="button72px twolines"><span><dfn>Buy one<br/> for them</dfn></span></a>
+						</div>
+						<div class="giftitem-price gifting-both">
+							<div class="price">
+								<img src="images/android/icon/5chip_big.png" alt="" />
+								<var>10</var>
+							</div>
+							<a class="button72px threelines"><span><dfn>Buy for<br/> you and<br/> them</dfn></span></a>
+						</div>
+						<div class="giftitem-price gifting-table">
+							<div class="price">
+								<img src="images/android/icon/5chip_big.png" alt="" />
+								<var>25</var>
+							</div>
+							<a class="button72px twolines"><span><dfn>Buy for<br/> table</dfn></span></a>
+						</div>
+					</div>
+				</div>
+				<br style="clear:both" />
+			</div>
+		</div>
+		-->
+		<br style="clear:both" />
+	</div>
+</body>
+</html>
